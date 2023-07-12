@@ -3,7 +3,7 @@ import PageContainer from "@/components/general/PageContainer"
 
 const Banner = () => {
     return(
-        <PageContainer className="relative grid grid-cols-1 md:grid-cols-2 gap-10 items-center py-40 md:min-h-screen md:max-h-[768px] min-[1366px]:min-h-[unset] min-[1366px]:max-h-[unset] min-[1366px]:py-56">
+        <PageContainer className="relative grid grid-cols-1 md:grid-cols-2 gap-10 items-center py-40 md:min-h-screen md:max-h-[768px] min-[1367px]:min-h-[unset] min-[1367px]:max-h-[unset] min-[1367px]:py-56">
 
             <div className="flex flex-col items-start gap-6">
                 <h1 className="text-2xl sm:text-4xl md:text-6xl font-medium">Hi! I am <span className="font-bold">Duyil Ayomid</span></h1>
