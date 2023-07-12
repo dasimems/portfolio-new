@@ -5,3 +5,20 @@
 body {
   color: black;
 }
+
+.special-scroll{
+  
+}
+
+.special-scroll-horizontal{
+  overflow-x: scroll;
+}
+
+.special-scroll-vertical{
+  overflow-y: scroll;
+}
+
+.special-scroll::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+}

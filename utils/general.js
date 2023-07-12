@@ -15,16 +15,16 @@ export const siteName = "Dasimems",
                 Icon: "",   
                 type: "link"
             },
-            Works: {
-                path: "/works",
-                label: "Works",
+            About: {
+                path: "/about",
+                label: "About Me",
                 showIn: [navLink],
                 Icon: "",   
                 type: "link"
             },
-            About: {
-                path: "/about",
-                label: "About Me",
+            Works: {
+                path: "/works",
+                label: "Works",
                 showIn: [navLink],
                 Icon: "",   
                 type: "link"
@@ -52,4 +52,31 @@ export const siteName = "Dasimems",
             },
         },
         allRoutes = Object.keys(Routes).map(key => Routes[key]),
-        navRoutes = allRoutes.filter(route => route.showIn.includes(navLink))
+        navRoutes = allRoutes.filter(route => route.showIn.includes(navLink)),
+        services = [
+            {
+                title: "Web Development",
+                description: "Aute fugiat sunt ad elit anim et consectetur minim do. Veniam ut sit consequat laborum.",
+                Icon: ""
+            },
+            {
+                title: "Mobile App Development",
+                description: "Aute fugiat sunt ad elit anim et consectetur minim do. Veniam ut sit consequat laborum.",
+                Icon: ""
+            },
+            {
+                title: "Blockchain Development",
+                description: "Aute fugiat sunt ad elit anim et consectetur minim do. Veniam ut sit consequat laborum.",
+                Icon: ""
+            },
+            {
+                title: "UI/UX Development",
+                description: "Aute fugiat sunt ad elit anim et consectetur minim do. Veniam ut sit consequat laborum.",
+                Icon: ""
+            },
+            {
+                title: "Graphics Design",
+                description: "Aute fugiat sunt ad elit anim et consectetur minim do. Veniam ut sit consequat laborum.",
+                Icon: ""
+            }
+        ]
