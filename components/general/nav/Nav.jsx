@@ -66,7 +66,7 @@ const Nav = () => {
 
     return(
 
-        <div ref={navRef} className="fixed z-[9999] max-w-[1366px] xl:px-[80px] flex items-center justify-between left-1/2 duration-300 bg-white p-2 rounded-full top-4 w-[90%] -translate-x-1/2 ">
+        <div ref={navRef} className="fixed z-[9999] max-w-[1366px] flex items-center justify-between left-1/2 duration-300 bg-white p-2 rounded-full top-4 w-[90%] -translate-x-1/2 min-[1366px]:px-[80px]">
 
                 <button className="h-[40px] w-[40px] md:hidden inline-flex items-center justify-center">
                     <FaBars />
