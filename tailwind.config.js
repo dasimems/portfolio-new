@@ -1,18 +1,39 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}"
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-    },
+      colors: {
+        primary: {
+          DEFAULT: "#3457D5",
+          "100": "rgb(52, 87, 213, .1)",
+          "200": "rgb(52, 87, 213, .2)",
+          "300": "rgb(52, 87, 213, .3)",
+          "400": "rgb(52, 87, 213, .4)",
+          "500": "rgb(52, 87, 213, .5)",
+          "600": "rgb(52, 87, 213, .6)",
+          "700": "rgb(52, 87, 213, .7)",
+          "800": "rgb(52, 87, 213, .8)",
+          "900": "rgb(52, 87, 213, .9)",
+          dark: {
+            DEFAULT: "#00308F",
+            "100": "rgb(0, 48, 143, .1)",
+            "200": "rgb(0, 48, 143, .2)",
+            "300": "rgb(0, 48, 143, .3)",
+            "400": "rgb(0, 48, 143, .4)",
+            "500": "rgb(0, 48, 143, .5)",
+            "600": "rgb(0, 48, 143, .6)",
+            "700": "rgb(0, 48, 143, .7)",
+            "800": "rgb(0, 48, 143, .8)",
+            "900": "rgb(0, 48, 143, .9)"
+          }
+        }
+      }
+    }
   },
-  plugins: [],
-}
+  plugins: []
+};
