@@ -1,8 +1,8 @@
-const ServiceCard = ({className,Icon, title, description}) => {
+const ServiceCard = ({className,Icon, title, col, description}) => {
     return(
         <div className={`p-2 rounded-md flex items-center justify-center bg-white ${className}`}>
 
-            <div className="flex items-center gap-6 py-5 px-8 bg-white rounded-md">
+            <div className={`flex items-center flex-col text-center ${col? "" : "md:flex-row md:text-left"} gap-6 px-8 py-5 bg-white rounded-md`}>
 
                 <div className="w-[80px] shrink-0 h-[80px] rounded-full bg-primary-50 inline-flex items-center justify-center">
 

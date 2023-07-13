@@ -4,6 +4,7 @@
 
 body {
   color: black;
+  min-width: 320px;
 }
 
 .special-scroll{
