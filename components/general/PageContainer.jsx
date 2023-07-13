@@ -8,7 +8,7 @@ const PageContainer = forwardRef(({children, className, innerContent, ...prop}, 
     
     return(
         <div className={`w-full flex items-center justify-center`}>
-            <div ref={ref} className={`px-[5%] xl:px-[80px] w-full ${!innerContent? "max-w-[1366px]" : ""} ${className? className : ""}`} {...prop}>
+            <div ref={ref} className={`px-[5%] xl:px-[80px] w-full ${!innerContent? "max-w-[1920px]" : ""} ${className? className : ""}`} {...prop}>
                 {children}
             </div>
 
