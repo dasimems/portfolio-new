@@ -79,4 +79,20 @@ export const siteName = "Dasimems",
                 description: "Aute fugiat sunt ad elit anim et consectetur minim do. Veniam ut sit consequat laborum.",
                 Icon: ""
             }
+        ],
+        whatMakesMeExceptionalList = [
+            {
+                stat: "100+",
+                title: "Projects Completed",
+            },
+            {
+                stat: "100+",
+                title: "Projects Completed",
+            },
+            {
+                stat: "100+",
+                title: "Projects Completed",
+            },
+
+
         ]
