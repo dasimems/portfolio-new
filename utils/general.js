@@ -1,3 +1,5 @@
+import { FaDiscord, FaFacebookSquare, FaInstagramSquare, FaLinkedinIn, FaTwitterSquare, FaWhatsappSquare } from "react-icons/fa";
+
 export const siteName = "Dasimems",
         navLink = "navLink",
         Routes = {
@@ -95,4 +97,43 @@ export const siteName = "Dasimems",
             },
 
 
-        ]
+        ],
+        Socials = {
+            Facebook: {
+                link: "",
+                name: "Facebook",
+                Icon: FaFacebookSquare,
+                
+            },
+            Twitter: {
+                link: "",
+                name: "Twitter",
+                Icon: FaTwitterSquare,
+
+            },
+            Instagram: {
+                link: "",
+                name: "Instagram",
+                Icon: FaInstagramSquare,
+
+            },
+            LinkedIn: {
+                link: "",
+                name: "Linkedin",
+                Icon: FaLinkedinIn,
+
+            },
+            Discord: {
+                link: "",
+                name: "Discord",
+                Icon: FaDiscord,
+
+            },
+            Whatsapp: {
+                link: "",
+                name: "Whatsapp",
+                Icon: FaWhatsappSquare,
+
+            }
+        },
+        socialList = Object.keys(Socials).map(key => Socials[key])
