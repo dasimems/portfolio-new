@@ -1,9 +1,12 @@
+import SEO from '@/components/general/SEO'
 import Footer from '@/components/general/footer/Footer'
 import Nav from '@/components/general/nav/Nav'
 import '@/styles/globals.css'
 
 export default function App({ Component, pageProps }) {
   return <>
+
+    {!Component.hideDefaultSEO && <SEO />}
 
     <Nav />
 
