@@ -1,10 +1,20 @@
-const ServiceCard = ({ className, Icon, title, col, description }) => {
+const ServiceCard = ({
+  className,
+  Icon,
+  title,
+  col,
+  description,
+  hideTooMuch
+}) => {
   return (
     <div
-      className={`p-2 rounded-md flex items-center justify-center overflow-hidden bg-white ${className}`}
+      aria-label={title}
+      className={`p-2 rounded-md flex items-center justify-center ${hideTooMuch
+        ? "overflow-hidden"
+        : ""} bg-white ${className}`}
     >
       <div
-        className={`flex items-center w-full h-full flex-col text-center ${col
+        className={`flex items-center flex-col text-center ${col
           ? ""
           : "md:flex-row md:text-left"} gap-6 px-8 py-5 bg-white rounded-md`}
       >
@@ -13,7 +23,7 @@ const ServiceCard = ({ className, Icon, title, col, description }) => {
         </div>
 
         <div className="flex flex-col flex-1 gap-4">
-          <h2 className="text-lg font-bold">
+          <h2 aria-label={title} className="text-lg font-bold">
             {title}
           </h2>
 
