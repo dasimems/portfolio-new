@@ -1,3 +1,4 @@
+import Button from "@/components/general/Button";
 import PageContainer from "@/components/general/PageContainer";
 
 const Banner = () => {
@@ -12,6 +13,8 @@ const Banner = () => {
         proident enim tempor nostrud sit esse. Culpa ullamco aliquip culpa ipsum
         ullamco veniam.
       </p>
+
+      <Button type="primary">Hire Me</Button>
     </PageContainer>
   );
 };
