@@ -6,7 +6,7 @@ import '@/styles/globals.css'
 export default function App({ Component, pageProps }) {
   return <>
 
-    {!Component.hideDefaultSEO && <SEO />}
+    {!Component.hideDefaultSEO && <SEO title={Component.title} description={Component.description} image={Component.image} imageDescription={Component.imageDescription} />}
 
     <Nav />
 
