@@ -15,7 +15,7 @@ body {
 .button-animation::after {
   position: absolute;
   content: "";
-  border: 13px solid rgba(255, 255, 255, 0.5);
+  border: 13px solid rgba(255, 255, 255, 0.6);
   width: 20px;
   height: 20px;
   left: 50%;
@@ -36,7 +36,7 @@ body {
 .button-animation::before {
   position: absolute;
   content: "";
-  border: 13px solid rgba(255, 255, 255, 0.5);
+  border: 13px solid rgba(255, 255, 255, 0.6);
   width: 52px;
   height: 52px;
   left: 50%;
@@ -53,6 +53,11 @@ body {
   -o-border-radius: 100px;
   animation: scale-up 2s ease infinite;
   -webkit-animation: scale-up 2s ease infinite;
+}
+
+.button-animation:hover::after,
+.button-animation:hover::before {
+  display: none;
 }
 
 @keyframes scale-up {
