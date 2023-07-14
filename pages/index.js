@@ -1,6 +1,6 @@
 import About from '@/components/pages/landing/About'
 import Banner from '@/components/pages/landing/Banner'
-import Conviction from '@/components/pages/landing/Conviction'
+import Conviction from '@/components/pages/general/Conviction'
 import Projects from '@/components/pages/landing/Projects'
 import Service from '@/components/pages/landing/Service'
 import WhyMe from '@/components/pages/landing/WhyMe'
