@@ -6,13 +6,13 @@ const ProjectCard = ({ className, type }) => {
   return (
     <Link
       href=""
-      className={`bg-slate-300 cursor-pointer rounded-md relative group/project ${className}`}
+      className={`p-5 md:p-0 bg-slate-300 cursor-pointer rounded-md relative group/project ${className}`}
     >
-      <span className="inline-flex absolute z-[1] top-5 left-5 font-medium text-primary py-2 px-5 text-xs bg-primary-200 rounded-[50px]">
+      <span className="inline-flex relative md:absolute z-[1] md:top-5 md:left-5 font-medium text-primary py-2 px-5 text-xs bg-primary-200 rounded-[50px]">
         {type}
       </span>
 
-      <div className="absolute bottom-5 left-0 px-7 flex items-center w-full justify-between">
+      <div className="relative md:absolute md:bottom-5 md:left-0 md:px-7 flex items-center w-full justify-between">
         <h1 aria-label="project title" className="font-bold text-slate-800">
           Project Title
         </h1>
