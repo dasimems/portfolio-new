@@ -97,16 +97,16 @@ export const siteName = "Dasimems",
   ],
   whatMakesMeExceptionalList = [
     {
-      stat: "100+",
-      title: "Projects Completed"
+      stat: "5+",
+      title: "Years of Experience"
     },
     {
       stat: "100+",
       title: "Projects Completed"
     },
     {
-      stat: "100+",
-      title: "Projects Completed"
+      stat: "100%",
+      title: "Customer's Satisfaction"
     }
   ],
   Socials = {
