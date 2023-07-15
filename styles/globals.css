@@ -82,11 +82,13 @@ body {
 .special-scroll {
 }
 
-.special-scroll-horizontal {
+.special-scroll-horizontal,
+.special-scroll-horizontal-two {
   overflow-x: scroll;
 }
 
-.special-scroll-vertical {
+.special-scroll-vertical,
+.special-scroll-vertical-two {
   overflow-y: scroll;
 }
 

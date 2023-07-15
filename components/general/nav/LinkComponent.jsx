@@ -21,7 +21,7 @@ const LinkComponent = ({label, path, Icon, showIcon, className, description}) =>
         description = label
     }
 
-    let linkClassName = `font-medium ${pathname === "path"? "" : "text-slate-700"}`;
+    let linkClassName = `font-medium relative ${pathname === path? "text-primary-700 after:absolute after:w-full after:h-[2px] after:left-0 after:bg-primary-700 after:-bottom-[3px]" : "text-slate-700"}`;
 
     return(
         
@@ -29,12 +29,12 @@ const LinkComponent = ({label, path, Icon, showIcon, className, description}) =>
 
             {type === "hash"? <a aria-label={description} href={path} className={`${linkClassName} ${className}`}>
 
-                {Icon && typeof(Icon) !== "string" && showIcon && <span><Icon /></span>}
+                {Icon && typeof(Icon) !== "string" && showIcon && <span><Icon set="bold" /></span>}
                  <span>{label}</span>
 
             </a> : <Link aria-label={description} href={path} className={`${linkClassName} ${className}`}>
 
-                {Icon && typeof(Icon) !== "string" && showIcon && <span><Icon /></span>}
+                {Icon && typeof(Icon) !== "string" && showIcon && <span><Icon set="bold" /></span>}
                  <span>{label}</span>
                 
             </Link>}

@@ -1,3 +1,4 @@
+import { Document, Folder, Home, Star, User, Work } from "react-iconly";
 import {
   FaDiscord,
   FaFacebookSquare,
@@ -14,28 +15,28 @@ export const siteName = "Dasimems",
       path: "/",
       label: "Home",
       showIn: [],
-      Icon: "",
+      Icon: Home,
       type: "link"
     },
     Services: {
       path: "/services",
       label: "Services",
       showIn: [navLink],
-      Icon: "",
+      Icon: Work,
       type: "link"
     },
     About: {
       path: "/about",
       label: "About Me",
       showIn: [navLink],
-      Icon: "",
+      Icon: User,
       type: "link"
     },
     Works: {
       path: "/works",
       label: "Works",
       showIn: [navLink],
-      Icon: "",
+      Icon: Folder,
       type: "link"
     },
     Contact: {
@@ -49,14 +50,14 @@ export const siteName = "Dasimems",
       path: "/blog",
       label: "Blog",
       showIn: [navLink],
-      Icon: "",
+      Icon: Document,
       type: "link"
     },
     Products: {
       path: "/products",
       label: "Products",
       showIn: [navLink],
-      Icon: "",
+      Icon: Star,
       type: "link"
     }
   },

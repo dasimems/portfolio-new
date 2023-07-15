@@ -23,7 +23,7 @@ const Logo = ({
       {!imageHidden &&
         <Image
           src={Favicon}
-          alt=""
+          alt="Duyil Ayomid - Dasimems"
           className="border-2 border-slate-200 rounded-full"
           priority
           width={imageSize ? imageSize : 50}
@@ -36,9 +36,9 @@ const Logo = ({
             }}>D</p>} */}
 
       {!textHidden &&
-        <p className={textClassName}>
+        <h1 className={textClassName}>
           {siteName}
-        </p>}
+        </h1>}
     </Link>
   );
 };
