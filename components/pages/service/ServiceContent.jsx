@@ -33,29 +33,29 @@ const ServiceContent = () => {
           />
         )}
       </div>
-      <div className="bg-[rgba(255,255,255,.5)] py-10 rounded-lg w-[50%] min-[1223px]:w-[30%] sticky max-h-[calc(100vh-80px)] top-[80px] hidden md:flex flex-col gap-6">
+      <div className="bg-[rgba(255,255,255,.5)] py-10 rounded-lg w-[50%] min-[1223px]:w-[30%] sticky max-h-[calc(100vh-80px)] top-[80px] hidden md:flex flex-col">
 
-            <div className="w-full h-full px-10 overflow-y-scroll special-scroll-two">
+            <div className="flex flex-col w-full h-full gap-6 px-10 overflow-y-scroll special-scroll-two">
               <h1 className="text-lg font-bold md:text-xl">{activeCardDetails?.title}</h1>
 
-              <div className="flex flex-col gap-2">
+              {activeCardDetails && activeCardDetails.skills && Array.isArray(activeCardDetails.skills) && activeCardDetails.skills.length > 0 &&  <div className="flex flex-col gap-2">
                 <h2 className="font-medium">Skills</h2>
 
                 <ul className="pl-1 list-disc list-inside text-primary">
-                  {activeCardDetails && activeCardDetails.skills && Array.isArray(activeCardDetails.skills) && activeCardDetails.skills.map((skill, index)=>(
+                  {activeCardDetails.skills.map((skill, index)=>(
                     <li key={index} className={`text-slate-700 ${index !== 0? "mt-2" : ""}`}>{skill}</li>
                   ))}
                 </ul>
-              </div>
-              <div className="flex flex-col gap-2">
+              </div>}
+              {activeCardDetails && activeCardDetails.tools && Array.isArray(activeCardDetails.tools) && activeCardDetails.tools.length > 0 && <div className="flex flex-col gap-2">
                 <h2 className="font-medium">Tools</h2>
 
                 <ul className="pl-1 list-disc list-inside text-primary">
-                  {activeCardDetails && activeCardDetails.tools && Array.isArray(activeCardDetails.tools) && activeCardDetails.tools.map((tools, index)=>(
+                  {activeCardDetails.tools.map((tools, index)=>(
                     <li key={index} className={`text-slate-700 ${index !== 0? "mt-2" : ""}`}>{tools}</li>
                   ))}
                 </ul>
-              </div>
+              </div>}
               
             </div>
       </div>
