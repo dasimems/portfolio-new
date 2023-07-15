@@ -67,31 +67,31 @@ export const siteName = "Dasimems",
     {
       title: "Web Development",
       description:
-        "Aute fugiat sunt ad elit anim et consectetur minim do. Veniam ut sit consequat laborum.",
+        "Creation and launching of web apps. This process involves the client side (Frontend) to the server side (Backend)",
       Icon: ""
     },
     {
       title: "Mobile App Development",
       description:
-        "Aute fugiat sunt ad elit anim et consectetur minim do. Veniam ut sit consequat laborum.",
+        "Developing applications specifically for mobile platforms, such as iOS (Apple) or Android (Google), such as smartphones and tablets",
       Icon: ""
     },
     {
       title: "Blockchain Development",
       description:
-        "Aute fugiat sunt ad elit anim et consectetur minim do. Veniam ut sit consequat laborum.",
+        "Developing decentralized applications (DApps) and smart contracts using blockchain technology, such as Ethereum, BEP20 or Hyperledger, to enable secure and transparent transactions and data management.",
       Icon: ""
     },
     {
       title: "UI/UX Development",
       description:
-        "Aute fugiat sunt ad elit anim et consectetur minim do. Veniam ut sit consequat laborum.",
+        "Improving the usability, accessibility, and general user satisfaction of websites, mobile apps, and softwares by designing elegant, modern interfaces and user experiences.",
       Icon: ""
     },
     {
       title: "Graphics Design",
       description:
-        "Aute fugiat sunt ad elit anim et consectetur minim do. Veniam ut sit consequat laborum.",
+        "Improve branding and communication efforts by creating aesthetically appealing and engaging visuals, including logos, banners, illustrations, and other visual elements.",
       Icon: ""
     }
   ],

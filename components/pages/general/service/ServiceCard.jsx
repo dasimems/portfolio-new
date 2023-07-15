@@ -9,7 +9,7 @@ const ServiceCard = ({
   return (
     <div
       aria-label={title}
-      className={`p-2 rounded-md flex items-center justify-center ${hideTooMuch
+      className={`p-2 rounded-md flex items-center justify-center md:justify-start ${hideTooMuch
         ? "overflow-hidden"
         : ""} bg-white ${className}`}
     >
