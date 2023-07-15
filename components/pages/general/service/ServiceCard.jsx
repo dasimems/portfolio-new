@@ -4,14 +4,18 @@ const ServiceCard = ({
   title,
   col,
   description,
-  hideTooMuch
+  hideTooMuch,
+  active,
+  enableHover,
+  ...props
 }) => {
   return (
     <div
+      {...props}
       aria-label={title}
       className={`p-2 rounded-md flex items-center justify-center md:justify-start ${hideTooMuch
         ? "overflow-hidden"
-        : ""} bg-white ${className}`}
+        : ""} ${active ? "bg-primary-200" : `bg-white ${enableHover? "hover:bg-primary-100" : ""}`} ${className}`}
     >
       <div
         className={`flex items-center flex-col text-center ${col

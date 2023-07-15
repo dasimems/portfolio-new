@@ -73,31 +73,41 @@ export const siteName = "Dasimems",
       title: "Web Development",
       description:
         "Creation and launching of web apps. This process involves the client side (Frontend) to the server side (Backend)",
-      Icon: FaLaptopCode
+      Icon: FaLaptopCode,
+      skills: ["HTML", "CSS", "Javascript", "Bootstrap", "Tailwind", "React.Js", "Next.Js", "Node.js", "Php", "Laravel", "Git"],
+      tools: ['VS Code', "Git Bash", "CLI", "Figma", "Chrome Browser", "Firefox Browser", "Opera Mini Browser", "Microsoft Edge Browser"]
     },
     {
       title: "Mobile App Development",
       description:
         "Developing applications specifically for mobile platforms, such as iOS (Apple) or Android (Google), such as smartphones and tablets",
-      Icon: FaMobile
+      Icon: FaMobile,
+      skills: ["React Native", "Git", "Node.js", "Php", "Laravel"],
+      tools: ["Figma", "Android Studio", "XCode", "Android Phone", "IOS Phone" ]
     },
     {
       title: "Blockchain Development",
       description:
         "Developing decentralized applications (DApps) and smart contracts using blockchain technology, such as Ethereum, BEP20 or Hyperledger, to enable secure and transparent transactions and data management.",
-      Icon: SiBlockchaindotcom
+      Icon: SiBlockchaindotcom,
+      skills: ["Solidity"],
+      tools: ["Truffle", "Ganache", "Vs Code", "Remix", "Hard Hat"]
     },
     {
       title: "UI/UX Development",
       description:
         "Improving the usability, accessibility, and general user satisfaction of websites, mobile apps, and softwares by designing elegant, modern interfaces and user experiences.",
-      Icon: RiArtboardLine
+      Icon: RiArtboardLine,
+      skills: ["Prototyping", "Ui Design", "Ux Design", "Wireframing", "User Flows ", "Mock Ups", "User Research"],
+      tools: ["Figma", "Adobe Xd", "Lunacy"]
     },
     {
       title: "Graphics Design",
       description:
         "Improve branding and communication efforts by creating aesthetically appealing and engaging visuals, including logos, banners, illustrations, and other visual elements.",
-      Icon: BsFillPaletteFill
+      Icon: BsFillPaletteFill,
+      skills: ["Brand Design", "Logo Design", "Flyers", "Magazines", "Banners E.T.C"],
+      tools: ["Adobe Photoshop", "Adobe Illustrator", "Adobe Indesign"]
     }
   ],
   whatMakesMeExceptionalList = [
