@@ -3,10 +3,15 @@ import {
   FaDiscord,
   FaFacebookSquare,
   FaInstagramSquare,
+  FaLaptopCode,
   FaLinkedinIn,
+  FaMobile,
   FaTwitterSquare,
   FaWhatsappSquare
 } from "react-icons/fa";
+import {SiBlockchaindotcom} from "react-icons/si"
+import {BsFillPaletteFill} from "react-icons/bs"
+import {RiArtboardLine} from "react-icons/ri"
 
 export const siteName = "Dasimems",
   navLink = "navLink",
@@ -68,31 +73,31 @@ export const siteName = "Dasimems",
       title: "Web Development",
       description:
         "Creation and launching of web apps. This process involves the client side (Frontend) to the server side (Backend)",
-      Icon: ""
+      Icon: FaLaptopCode
     },
     {
       title: "Mobile App Development",
       description:
         "Developing applications specifically for mobile platforms, such as iOS (Apple) or Android (Google), such as smartphones and tablets",
-      Icon: ""
+      Icon: FaMobile
     },
     {
       title: "Blockchain Development",
       description:
         "Developing decentralized applications (DApps) and smart contracts using blockchain technology, such as Ethereum, BEP20 or Hyperledger, to enable secure and transparent transactions and data management.",
-      Icon: ""
+      Icon: SiBlockchaindotcom
     },
     {
       title: "UI/UX Development",
       description:
         "Improving the usability, accessibility, and general user satisfaction of websites, mobile apps, and softwares by designing elegant, modern interfaces and user experiences.",
-      Icon: ""
+      Icon: RiArtboardLine
     },
     {
       title: "Graphics Design",
       description:
         "Improve branding and communication efforts by creating aesthetically appealing and engaging visuals, including logos, banners, illustrations, and other visual elements.",
-      Icon: ""
+      Icon: BsFillPaletteFill
     }
   ],
   whatMakesMeExceptionalList = [
@@ -149,4 +154,5 @@ export const siteName = "Dasimems",
     >
       LinkedIn
     </a> and I&apos;ve demonstrated my ability to develop more useful apps in the real world. I&apos;m always interested in picking up new skills.</>,
+    serviceText = "By utilizing the power of technological innovation and offering a wide range of services. I am a master at building dynamic websites that captivate your audience, creating cutting-edge mobile apps that improve user experiences, implementing safe blockchain solutions that revolutionize data integrity, designing user-friendly UI/UX layouts that encourage engagement and creating visually stunning graphics that strengthen your brand identity. Count on me to provide competent solutions that turn your concepts into online successes.",
   socialList = Object.keys(Socials).map(key => Socials[key]);

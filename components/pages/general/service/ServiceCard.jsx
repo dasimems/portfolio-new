@@ -18,7 +18,7 @@ const ServiceCard = ({
           ? ""
           : "md:flex-row md:text-left"} gap-6 px-8 py-5 bg-white rounded-md`}
       >
-        <div className="w-[80px] shrink-0 h-[80px] rounded-full bg-primary-50 inline-flex items-center justify-center">
+        <div className="w-[80px] shrink-0 text-3xl text-primary-700 h-[80px] rounded-full bg-primary-50 inline-flex items-center justify-center">
           {Icon && typeof Icon !== "string" && <Icon />}
         </div>
 

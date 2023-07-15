@@ -136,8 +136,8 @@ body {
 .button-hover:hover:not(.button-animation)::after,
 .button-hover:hover:not(.button-animation)::before {
   display: block;
-  animation: scale-up 2s ease forwards;
-  -webkit-animation: scale-up 2s ease forwards;
+  animation: scale-up 1s ease forwards;
+  -webkit-animation: scale-up 1s ease forwards;
 }
 
 @keyframes scale-up {

@@ -1,5 +1,6 @@
 import Button from "@/components/general/Button";
 import PageContainer from "@/components/general/PageContainer";
+import { serviceText } from "@/utils/general";
 
 const Banner = () => {
   return (
@@ -7,11 +8,8 @@ const Banner = () => {
       <h1 className="text-xl sm:text-3xl md:text-5xl font-bold text-slate-700">
         Services I Offer
       </h1>
-      <p className="md:text-lg text-slate-500 max-w-[750px]">
-        Commodo proident amet ullamco officia duis aute sunt nisi fugiat in
-        consequat non ad ad. Et laborum laborum do reprehenderit sit ipsum
-        proident enim tempor nostrud sit esse. Culpa ullamco aliquip culpa ipsum
-        ullamco veniam.
+      <p className="md:text-lg text-slate-500 max-w-[850px]">
+        {serviceText}
       </p>
 
       <Button type="primary">Hire Me</Button>

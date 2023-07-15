@@ -2,6 +2,7 @@ import PageContainer from "@/components/general/PageContainer";
 import ServiceList from "../general/service/ServiceList";
 import SectionHeader from "@/components/general/SectionHeader";
 import Button from "@/components/general/Button";
+import { serviceText } from "@/utils/general";
 
 const Service = () => {
   return (
@@ -14,14 +15,7 @@ const Service = () => {
         </div>
 
         <p className="text-slate-700">
-          By utilizing the power of technological innovation and offering a wide
-          range of services. I am a master at building dynamic websites that
-          captivate your audience, creating cutting-edge mobile apps that
-          improve user experiences, implementing safe blockchain solutions that
-          revolutionize data integrity, designing user-friendly UI/UX layouts
-          that encourage engagement and creating visually stunning graphics that
-          strengthen your brand identity. Count on me to provide competent
-          solutions that turn your concepts into online successes.
+          {serviceText}
         </p>
 
         <Button type="primary">View my projects</Button>
