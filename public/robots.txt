@@ -1,1 +1,2 @@
 User-agent: *
+sitemap: http://dasimems.com/sitemap.xml

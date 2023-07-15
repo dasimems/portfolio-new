@@ -15,6 +15,8 @@ export default function Document() {
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-tap-highlight" content="no" />
         <meta name="theme-color" content="#3457D5" />
+        <link rel="robots" href="/robots.txt" />
+        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
         <link rel="manifest" href="/manifest.json" />
         <link rel="shortcut icon" href="/favicon-16x16.png" type="image/png" />
