@@ -110,32 +110,32 @@ export const siteName = "Dasimems",
   ],
   Socials = {
     Facebook: {
-      link: "",
+      link: "https://facebook.com/dasimems",
       name: "Facebook",
       Icon: FaFacebookSquare
     },
     Twitter: {
-      link: "",
+      link: "https://twitter.com/dasimems",
       name: "Twitter",
       Icon: FaTwitterSquare
     },
     Instagram: {
-      link: "",
+      link: "https://instagram.com/dasimems",
       name: "Instagram",
       Icon: FaInstagramSquare
     },
     LinkedIn: {
-      link: "",
+      link: "https://linkedin.com/in/dasimems",
       name: "Linkedin",
       Icon: FaLinkedinIn
     },
     Discord: {
-      link: "",
+      link: "https://discordapp.com/users/dasimems",
       name: "Discord",
       Icon: FaDiscord
     },
     Whatsapp: {
-      link: "",
+      link: "https://wa.me/+2349036634645",
       name: "Whatsapp",
       Icon: FaWhatsappSquare
     }
