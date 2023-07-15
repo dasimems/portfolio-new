@@ -1,5 +1,6 @@
 import Button from "@/components/general/Button";
 import PageContainer from "@/components/general/PageContainer";
+import { aboutMe } from "@/utils/general";
 import { Download } from "react-iconly";
 
 const Banner = () => {
@@ -9,10 +10,7 @@ const Banner = () => {
         Who I Am
       </h1>
       <p className="md:text-lg text-slate-500 max-w-[750px]">
-        Commodo proident amet ullamco officia duis aute sunt nisi fugiat in
-        consequat non ad ad. Et laborum laborum do reprehenderit sit ipsum
-        proident enim tempor nostrud sit esse. Culpa ullamco aliquip culpa ipsum
-        ullamco veniam.
+        {aboutMe}
       </p>
 
       <Button type="primary" className="gap-2">

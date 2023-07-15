@@ -2,6 +2,7 @@ import { AboutImage } from "@/assets/images";
 import Button from "@/components/general/Button";
 import PageContainer from "@/components/general/PageContainer";
 import SectionHeader from "@/components/general/SectionHeader";
+import { aboutMe } from "@/utils/general";
 import Image from "next/image";
 import { ArrowRight } from "react-iconly";
 
@@ -12,10 +13,7 @@ const About = () => {
         <SectionHeader titleOne="About" titleTwo="Me" />
 
         <p className="text-slate-700 ">
-          Occaecat nulla enim ipsum anim mollit voluptate ut ut veniam cillum
-          culpa. Non labore officia mollit veniam adipisicing enim eu sint ex
-          magna. Do aliquip non enim aliquip amet ea velit magna enim.
-          Incididunt adipisicing et cupidatat aliquip culpa aliqua nisi.
+          {aboutMe}
         </p>
       </div>
 

@@ -141,4 +141,12 @@ export const siteName = "Dasimems",
       Icon: FaWhatsappSquare
     }
   },
+  aboutMe = <>I am Omonimewa Isaac. however goes by Duyil Ayomid. I am from Ekiti, Nigeria, and I attended Federal Polytechnic Ado Ekiti to study electrical and electronic engineering. I first got interested in technology when I was young because I was curious about how things worked. I soon discovered programming and have been honing my skills ever since. I&apos;ve taken and passed a number of skills assessments on <a
+      href={Socials.LinkedIn.link}
+      className="text-primary underline font-medium"
+      target="_blank"
+      rel="noreferrer"
+    >
+      LinkedIn
+    </a> and I&apos;ve demonstrated my ability to develop more useful apps in the real world. I&apos;m always interested in picking up new skills.</>,
   socialList = Object.keys(Socials).map(key => Socials[key]);
