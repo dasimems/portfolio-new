@@ -25,7 +25,12 @@ const Service = () => {
 
       <div className="grid grid-cols-1 gap-20 py-20 bg-white md:grid-cols-2 p-10">
         <div className="relative min-h-[120px]">
-          <Image src={SolutionImageOne} alt="" fill className="object-cover" />
+          <Image
+            src={SolutionImageOne}
+            alt="Duyil Ayomid - Digital Solutions Architect"
+            fill
+            className="object-cover"
+          />
         </div>
 
         <div className="flex flex-col items-start gap-6">
