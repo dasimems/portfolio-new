@@ -7,6 +7,8 @@ import BannerImageThree from "./banner-image-3.png";
 import BannerImageFullOne from "./banner-image-full-1.png";
 import BannerImageFullTwo from "./banner-image-full-2.png";
 import BannerImageFullThree from "./banner-image-full-3.png";
+import SolutionSvgImageOne from "./solution-svg-1.svg";
+import SolutionImageOne from "./solution-image-1.png";
 
 export {
   DoubtingImage,
@@ -17,5 +19,7 @@ export {
   BannerImageThree,
   BannerImageFullOne,
   BannerImageFullTwo,
-  BannerImageFullThree
+  BannerImageFullThree,
+  SolutionSvgImageOne,
+  SolutionImageOne
 };
