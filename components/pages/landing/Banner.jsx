@@ -44,7 +44,9 @@ const Banner = () => {
           A web, mobile app, Blockchain Developer and also an Electrical
           Electronics Engineer
         </p>
-        <Button type="primary">Hire Me</Button>
+        <Button type="primary" className="py-3 px-15">
+          Hire Me
+        </Button>
       </div>
 
       <div className="flex items-center md:justify-center">
