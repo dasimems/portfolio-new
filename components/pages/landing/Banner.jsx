@@ -42,7 +42,7 @@ const Banner = () => {
         </h1>
         <p className="text-lg md:text-xl">
           A web, mobile app, Blockchain Developer and also an Electrical
-          ELectronics Engineer
+          Electronics Engineer
         </p>
         <Button type="primary">Hire Me</Button>
       </div>
