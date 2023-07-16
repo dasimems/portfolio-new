@@ -8,8 +8,7 @@ const Banner = () => {
         Completed Projects
       </h1>
       <p className="md:text-lg text-slate-500 max-w-[750px]">
-        Commodo proident amet ullamco officia duis aute sunt nisi fugiat in
-        consequat non ad ad.
+        Proven Expertise in Crafting Engaging Websites, Mobile Apps, and More
       </p>
 
       <InputField
