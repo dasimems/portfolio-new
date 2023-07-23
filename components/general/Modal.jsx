@@ -6,7 +6,7 @@ const Modal = ({
   onClose,
   children,
   containerClassName,
-  className
+  className,
 }) => {
   const [showModal, setShowModal] = useState(false);
   const [modalOpened, setModalOpened] = useState(false);
@@ -17,43 +17,37 @@ const Modal = ({
   //     }
   // }
 
-  useEffect(
-    () => {
-      setModalOpened(opened);
-    },
-    [opened]
-  );
+  useEffect(() => {
+    setModalOpened(opened);
+  }, [opened]);
 
-  useEffect(
-    () => {
-      if (modalOpened) {
-        setTimeout(() => {
-          setShowModal(true);
-        }, 200);
-      } else {
-        setTimeout(() => {
-          setShowModal(false);
-        }, 500);
-      }
-    },
-    [modalOpened]
-  );
+  useEffect(() => {
+    if (modalOpened) {
+      setTimeout(() => {
+        setShowModal(true);
+      }, 200);
+    } else {
+      setTimeout(() => {
+        setShowModal(false);
+      }, 500);
+    }
+  }, [modalOpened]);
 
   return (
     <div
-      className={`w-screen h-screen bg-[rgba(0,0,0,.5)] duration-300 fixed top-0 left-0 z-[999] transition-all ${modalOpened
-        ? "flex"
-        : "hidden"} ${showModal ? "opacity-100" : "opacity-0"}`}
+      className={`w-full h-full bg-[rgba(0,0,0,.5)] duration-300 fixed top-0 left-0 z-[999] transition-all ${
+        modalOpened ? "flex" : "hidden"
+      } ${showModal ? "opacity-100" : "opacity-0"}`}
     >
       <div
-        className={`flex-1 w-full h-full relative ${className
-          ? className
-          : ""}`}
+        className={`flex-1 w-full h-full relative ${
+          className ? className : ""
+        }`}
       >
         <div
-          className={`relative z-[999] ${containerClassName
-            ? containerClassName
-            : ""}`}
+          className={`relative z-[999] ${
+            containerClassName ? containerClassName : ""
+          }`}
         >
           {children}
         </div>
