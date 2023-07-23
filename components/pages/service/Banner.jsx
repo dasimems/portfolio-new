@@ -1,18 +1,20 @@
 import Button from "@/components/general/Button";
 import PageContainer from "@/components/general/PageContainer";
 import { serviceText } from "@/utils/general";
+import { useRouter } from "next/router";
 
 const Banner = () => {
+  const { pathname } = useRouter();
   return (
-    <PageContainer className="flex flex-col gap-10 py-32 items-center text-center justify-center">
-      <h1 className="text-xl sm:text-3xl md:text-5xl font-bold text-slate-700">
+    <PageContainer className="flex flex-col items-center justify-center gap-10 py-32 text-center">
+      <h1 className="text-xl font-bold sm:text-3xl md:text-5xl text-slate-700">
         Services I Offer
       </h1>
-      <p className="md:text-lg text-slate-500 max-w-[850px]">
-        {serviceText}
-      </p>
+      <p className="md:text-lg text-slate-500 max-w-[850px]">{serviceText}</p>
 
-      <Button type="primary">Hire Me</Button>
+      <Button link={`${pathname}?nav=contact`} type="primary">
+        Hire Me
+      </Button>
     </PageContainer>
   );
 };

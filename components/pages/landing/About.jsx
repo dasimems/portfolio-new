@@ -2,7 +2,7 @@ import { AboutImage } from "@/assets/images";
 import Button from "@/components/general/Button";
 import PageContainer from "@/components/general/PageContainer";
 import SectionHeader from "@/components/general/SectionHeader";
-import { aboutMe } from "@/utils/general";
+import { Routes, aboutMe } from "@/utils/general";
 import Image from "next/image";
 import { ArrowRight } from "react-iconly";
 
@@ -12,9 +12,7 @@ const About = () => {
       <div className="flex flex-col items-center justify-center gap-10 text-center">
         <SectionHeader titleOne="About" titleTwo="Me" />
 
-        <p className="text-slate-700 ">
-          {aboutMe}
-        </p>
+        <p className="text-slate-700 ">{aboutMe}</p>
       </div>
 
       <div
@@ -23,7 +21,7 @@ const About = () => {
           background: `url(${AboutImage.src}) no-repeat`,
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
-          backgroundPosition: "center"
+          backgroundPosition: "center",
         }}
       >
         {/* <Image
@@ -38,6 +36,7 @@ const About = () => {
 
       <div className="flex justify-end">
         <Button
+          link={Routes.About.path}
           buttonDescription="Know more about me"
           type="primary"
           className="w-[50px] h-[50px] items-center justify-center pl-0 pr-0 pt-0 pb-0"

@@ -15,7 +15,8 @@ import { X } from "lucide-react";
 const Nav = () => {
   const navRef = useRef(null);
   const mobileMenuRef = useRef(null);
-  const { pathname } = useRouter();
+  const { pathname, push, query } = useRouter();
+  const { nav } = query;
 
   const [mobileNavOpened, setMobileNavOpened] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
@@ -92,8 +93,17 @@ const Nav = () => {
 
   useEffect(() => {
     setMobileNavOpened(false);
-    setContactMe(false);
   }, [pathname]);
+
+  useEffect(() => {
+    if (nav) {
+      setTimeout(() => {
+        setContactMe(true);
+      }, 300);
+    } else {
+      setContactMe(false);
+    }
+  }, [nav]);
 
   return (
     <>
@@ -130,9 +140,7 @@ const Nav = () => {
         </div>
 
         <Button
-          action={() => {
-            setContactMe(true);
-          }}
+          link={`${pathname}?nav=contact`}
           type="primary"
           className="gap-2 h-[35px] w-[35px] sm:h-[40px] sm:w-[40px] md:h-auto md:w-auto items-center justify-center"
           buttonDescription="Contact me"
@@ -170,15 +178,16 @@ const Nav = () => {
       <Modal
         opened={contactMe}
         onClose={() => {
-          setContactMe(false);
+          push(pathname);
         }}
       >
         <div className="absolute w-[90%] max-w-[800px] flex flex-col gap-3 p-10 -translate-x-1/2 bg-white top-20 rounded-md left-1/2">
           <div className="flex justify-end">
             <button
+              type="transparent"
               className="text-xl text-red-600"
               onClick={() => {
-                setContactMe(false);
+                push(pathname);
               }}
             >
               <X />

@@ -3,15 +3,17 @@ import PageContainer from "@/components/general/PageContainer";
 import SectionHeader from "@/components/general/SectionHeader";
 import { ArrowRight } from "react-iconly";
 import ProjectList from "../general/works/ProjectsList";
+import { Routes } from "@/utils/general";
 
 const Projects = () => {
   return (
-    <PageContainer className="py-20 md:py-40 flex-col flex gap-20">
+    <PageContainer className="flex flex-col gap-20 py-20 md:py-40">
       <div className="flex items-center justify-between">
         <SectionHeader titleOne="Projects" titleTwo="Completed" />
 
         <Button
-          buttonDescription="Know more about me"
+          link={Routes.Works.path}
+          buttonDescription="My Projects"
           type="primary"
           className="w-[50px] h-[50px] items-center justify-center pl-0 pr-0 pt-0 pb-0"
         >
@@ -19,7 +21,7 @@ const Projects = () => {
         </Button>
       </div>
 
-      <div className="flex-col flex gap-3">
+      <div className="flex flex-col gap-3">
         <ProjectList />
         <ProjectList inverted />
       </div>
