@@ -6,7 +6,7 @@ const PageContainer = forwardRef(
       <div className={`w-full flex items-center justify-center`}>
         <div
           ref={ref}
-          className={`px-[5%] min-[1921px]:px-[80px] w-full ${!innerContent
+          className={`px-[5%] min-[1921px]:px-[80px] w-full overflow-hidden ${!innerContent
             ? "max-w-[1920px]"
             : ""} ${className ? className : ""}`}
           {...prop}

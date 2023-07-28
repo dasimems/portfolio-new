@@ -9,7 +9,9 @@ const ServiceList = ({ horizontal, className }) => {
       <div
         className={`grid grid-cols-1 sm:grid-cols-2 min-[1245px]:grid-cols-3 gap-6`}
       >
-        {services.map((data, index) => <ServiceCard {...data} key={index} />)}
+        {services.map((data, index) =>
+          <ServiceCard data-aos="slide-up" {...data} key={index} />
+        )}
       </div>
     </div>
   );

@@ -11,9 +11,14 @@ const Service = () => {
   return (
     <PageContainer className="flex flex-col gap-20">
       <div className="flex justify-between w-full text-center">
-        <SectionHeader titleOne="My Awesome" titleTwo="Services" />
+        <SectionHeader
+          data-aos="slide-right"
+          titleOne="My Awesome"
+          titleTwo="Services"
+        />
 
         <Button
+          data-aos="slide-left"
           buttonDescription="View my services"
           link={Routes.Services.path}
           type="primary"
@@ -28,6 +33,7 @@ const Service = () => {
       <div className="grid grid-cols-1 gap-20 p-10 py-20 bg-white md:grid-cols-2">
         <div className="relative min-h-[120px]">
           <Image
+            data-aos="fade"
             src={SolutionImageOne}
             alt="Duyil Ayomid - Digital Solutions Architect"
             fill
@@ -35,12 +41,23 @@ const Service = () => {
           />
         </div>
 
-        <div className="flex flex-col items-start gap-6">
-          <SectionHeader titleOne="Digital Solutions" titleTwo="Architect" />
-          <p className="text-slate-700">{serviceText}</p>
+        <div className="flex flex-col items-start gap-6 overflow-hidden">
+          <SectionHeader
+            data-aos="slide-right"
+            titleOne="Digital Solutions"
+            titleTwo="Architect"
+          />
+          <p
+            className="text-slate-700"
+            data-aos="slide-left"
+            data-aos-offset="50"
+          >
+            {serviceText}
+          </p>
 
           <Button
             buttonDescription="View Projects"
+            data-aos="fade"
             type="primary"
             link={Routes.Works.path}
           >

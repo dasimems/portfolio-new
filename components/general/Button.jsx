@@ -6,7 +6,8 @@ const Button = ({
   action,
   link,
   className,
-  buttonDescription
+  buttonDescription,
+  ...props
 }) => {
   const { push } = useRouter();
 
@@ -32,6 +33,7 @@ const Button = ({
       }}
       aria-label={buttonDescription ? buttonDescription : "button"}
       className={`button-hover inline-flex py-2 px-5 rounded-full font-medium ${typeClassName} ${className}`}
+      {...props}
     >
       {children}
     </button>

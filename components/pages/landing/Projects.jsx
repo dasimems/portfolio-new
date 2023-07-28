@@ -9,9 +9,14 @@ const Projects = () => {
   return (
     <PageContainer className="flex flex-col gap-20 py-20 md:py-40">
       <div className="flex items-center justify-between">
-        <SectionHeader titleOne="Projects" titleTwo="Completed" />
+        <SectionHeader
+          data-aos="slide-right"
+          titleOne="Projects"
+          titleTwo="Completed"
+        />
 
         <Button
+          data-aos="slide-left"
           link={Routes.Works.path}
           buttonDescription="My Projects"
           type="primary"

@@ -5,6 +5,7 @@ import { ArrowRight } from "react-iconly";
 const ProjectCard = ({ className, type }) => {
   return (
     <Link
+      data-aos="fade"
       href=""
       className={`p-5 md:p-0 bg-slate-300 cursor-pointer rounded-md relative group/project ${className}`}
     >

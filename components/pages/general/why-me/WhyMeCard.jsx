@@ -1,6 +1,6 @@
-const WhyMeCard = ({ stat, title }) => {
+const WhyMeCard = ({ stat, title, ...props }) => {
   return (
-    <div className="">
+    <div className="" {...props}>
       <div className="relative group/why-me w-full">
         <div className="absolute w-[108%] h-full -bottom-[15%] bg-primary-200 left-1/2 -translate-x-1/2 rounded-md -z-[1]" />
 

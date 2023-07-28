@@ -54,14 +54,26 @@ const Banner = () => {
       />
 
       <div className="flex flex-col items-center gap-6 z-[1]">
-        <h1 className="text-2xl font-medium sm:text-4xl md:text-6xl">
+        <h1
+          className="text-2xl font-medium sm:text-4xl md:text-6xl"
+          data-aos="slide-up"
+        >
           Hi! I am <span className="font-bold text-primary">Duyil Ayomid</span>
         </h1>
-        <p className="text-lg md:text-xl max-w-[700px] text-center text-slate-700">
+        <p
+          className="text-lg md:text-xl max-w-[700px] text-center text-slate-700"
+          data-aos="slide-up"
+          data-aos-delay="100"
+        >
           A web, mobile app, Blockchain Developer and also an Electrical
           Electronics Engineer
         </p>
-        <Button type="primary" className="py-3 px-15">
+        <Button
+          data-aos="slide-up"
+          data-aos-delay="150"
+          type="primary"
+          className="py-3 px-15"
+        >
           Read More About Me
         </Button>
       </div>

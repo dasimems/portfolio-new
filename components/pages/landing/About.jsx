@@ -10,9 +10,11 @@ const About = () => {
   return (
     <PageContainer className="flex flex-col gap-20 py-20 md:py-40">
       <div className="flex flex-col items-center justify-center gap-10 text-center">
-        <SectionHeader titleOne="About" titleTwo="Me" />
+        <SectionHeader data-aos="slide-up" titleOne="About" titleTwo="Me" />
 
-        <p className="text-slate-700 ">{aboutMe}</p>
+        <p className="text-slate-700 " data-aos="slide-up">
+          {aboutMe}
+        </p>
       </div>
 
       <div
@@ -21,7 +23,7 @@ const About = () => {
           background: `url(${AboutImage.src}) no-repeat`,
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "center"
         }}
       >
         {/* <Image
