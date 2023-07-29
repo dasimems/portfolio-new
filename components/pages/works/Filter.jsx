@@ -12,13 +12,15 @@ const FilterButton = ({ text, ...props }) => {
 
 const Filter = () => {
   return (
-    <PageContainer className="">
-      <div className="overflow-x-scroll flex gap-4 pb-5 special-scroll">
-        {projectCategoriesList.map(({ shortName }, index) =>
-          <FilterButton text={shortName} key={index} />
-        )}
-      </div>
-    </PageContainer>
+    <div className=" z-10 sticky top-[76px] py-5 bg-[#EAEDFA]">
+      <PageContainer className="">
+        <div className="overflow-x-scroll flex gap-4 special-scroll">
+          {projectCategoriesList.map(({ shortName }, index) =>
+            <FilterButton text={shortName} key={index} />
+          )}
+        </div>
+      </PageContainer>
+    </div>
   );
 };
 
