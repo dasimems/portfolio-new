@@ -2,6 +2,7 @@ import PageContainer from "@/components/general/PageContainer"
 import Conviction from "@/components/pages/general/Conviction"
 import ProjectList from "@/components/pages/general/works/ProjectsList"
 import Banner from "@/components/pages/works/Banner"
+import Filter from "@/components/pages/works/Filter"
 
 const Works = () => {
     return(
@@ -9,7 +10,7 @@ const Works = () => {
         <>
 
             <Banner />
-
+            <Filter />
             <PageContainer className="py-20 pt-0 flex-col flex gap-3">
 
                 <ProjectList />

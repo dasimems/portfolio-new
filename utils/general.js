@@ -213,6 +213,32 @@ export const siteName = "Dasimems",
       Icon: FaWhatsappSquare,
     },
   },
+  ProjectCategories = {
+    website: {
+      name: "Website Development",
+      shortName: "Web"
+    },
+    Mobile: {
+      name: "Mobile App Development",
+      shortName: "Mobile"
+    },
+    Desktop: {
+      name: "Desktop App Development",
+      shortName: "Desktop"
+    },
+    Game: {
+      name: "Game Development",
+      shortName: "Desktop"
+    },
+    UIUX: {
+      name: "User Interface - User Design",
+      shortName: "UI/UX"
+    },
+    Graphic: {
+      name: "Graphic Design",
+      shortName: "Graphics"
+    }
+  },
   aboutMe = (
     <>
       I am Omonimewa Isaac. however goes by Duyil Ayomid. I am from Ekiti,
@@ -276,6 +302,10 @@ export const siteName = "Dasimems",
       position: "Brand and UI/UX Designer"
     }
   ],
+  projectCategoriesList = Object.keys(ProjectCategories).map(
+    (key) => ProjectCategories[key]
+  ),
+
   serviceText =
     "By utilizing the power of technological innovation and offering a wide range of services. I am a master at building dynamic websites that captivate your audience, creating cutting-edge mobile apps that improve user experiences, implementing safe blockchain solutions that revolutionize data integrity, designing user-friendly UI/UX layouts that encourage engagement and creating visually stunning graphics that strengthen your brand identity. Count on me to provide competent solutions that turn your concepts into online successes.",
   socialList = Object.keys(Socials).map((key) => Socials[key]),
