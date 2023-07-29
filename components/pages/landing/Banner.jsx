@@ -10,6 +10,7 @@ import {
 } from "@/assets/images";
 import Button from "@/components/general/Button";
 import PageContainer from "@/components/general/PageContainer";
+import { Routes } from "@/utils/general";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { useCallback, useEffect, useState } from "react";
@@ -69,6 +70,7 @@ const Banner = () => {
           Electronics Engineer
         </p>
         <Button
+          link={Routes.About.path}
           data-aos="slide-up"
           data-aos-delay="150"
           type="primary"
