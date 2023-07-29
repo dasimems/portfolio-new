@@ -1,7 +1,7 @@
-const SectionHeader = ({ titleOne, titleTwo, ...props }) => {
+const SectionHeader = ({ titleOne, titleTwo, className, ...props }) => {
   return (
     <h1
-      className="text-lg md:text-2xl font-medium inline-flex gap-2 items-center"
+      className={`text-lg md:text-2xl font-medium inline-flex gap-2 items-center ${className}`}
       {...props}
     >
       {titleOne}
