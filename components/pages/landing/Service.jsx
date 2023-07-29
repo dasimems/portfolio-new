@@ -12,13 +12,13 @@ const Service = () => {
     <PageContainer className="flex flex-col gap-20">
       <div className="flex justify-between w-full text-center">
         <SectionHeader
-          data-aos="slide-right"
+          data-aos="fade-right"
           titleOne="My Awesome"
           titleTwo="Services"
         />
 
         <Button
-          data-aos="slide-left"
+          data-aos="fade-left"
           buttonDescription="View my services"
           link={Routes.Services.path}
           type="primary"

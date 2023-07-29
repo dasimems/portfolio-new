@@ -10,7 +10,16 @@ const About = () => {
   return (
     <PageContainer className="flex flex-col gap-20 py-20 md:py-40">
       <div className="flex flex-col items-center justify-center gap-10 text-center">
-        <SectionHeader data-aos="slide-up" titleOne="About" titleTwo="Me" />
+        <SectionHeader
+          titleOneProps={{
+            "data-aos": "slide-down"
+          }}
+          titleTwoProps={{
+            "data-aos": "slide-up"
+          }}
+          titleOne="About"
+          titleTwo="Me"
+        />
 
         <p className="text-slate-700 " data-aos="slide-up">
           {aboutMe}
