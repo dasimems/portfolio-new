@@ -27,6 +27,7 @@ const WorkingProcess = () => {
           icon={<ProcessingIcon src={Development} />}
           title="Research and Development"
           description="It entails undertaking research to address complex issues, experimenting with new technology, and exploring novel concepts. It focuses on advancing technological frontiers to produce cutting-edge software solutions."
+          imageClassName="bouncing-delay"
         />
         <WorkingProcessCard
           icon={<ProcessingIcon src={Launch} />}

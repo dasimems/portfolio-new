@@ -6,6 +6,7 @@ const WorkingProcessCard = ({
   description,
   icon,
   arrowHidden,
+  imageClassName,
   ...props
 }) => {
   return (
@@ -16,7 +17,7 @@ const WorkingProcessCard = ({
       {!arrowHidden &&
         <Image
           src={ArrowSVG}
-          className="max-w-[20%] bouncing hidden md:block object-contain -rotate-[13deg] absolute top-0 left-[95%]"
+          className={`max-w-[20%] bouncing hidden md:block object-contain -rotate-[13deg] absolute top-0 left-[95%] ${imageClassName}`}
           alt=""
         />}
       {!arrowHidden &&

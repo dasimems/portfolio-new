@@ -156,6 +156,7 @@ body {
     -moz-transform: rotateZ(-5deg) translateY(-20px);
     -ms-transform: rotateZ(-5deg) translateY(-20px);
     -o-transform: rotateZ(-5deg) translateY(-20px);
+    opacity: 0;
   }
 
   50% {
@@ -164,6 +165,7 @@ body {
     -moz-transform: rotateZ(-15deg) translateY(0px);
     -ms-transform: rotateZ(-15deg) translateY(0px);
     -o-transform: rotateZ(-15deg) translateY(0px);
+    opacity: 1;
   }
 
   100% {
@@ -172,6 +174,7 @@ body {
     -moz-transform: rotateZ(-5deg) translateY(-20px);
     -ms-transform: rotateZ(-5deg) translateY(-20px);
     -o-transform: rotateZ(-5deg) translateY(-20px);
+    opacity: 0;
   }
 }
 @keyframes bouncing-two {
