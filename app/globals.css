@@ -1,0 +1,250 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+    --font-heading: var(--font-sans);
+    --font-sans: var(--font-sans);
+
+    --color-sidebar-ring: var(--sidebar-ring);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar: var(--sidebar);
+    --color-chart-5: var(--chart-5);
+    --color-chart-4: var(--chart-4);
+    --color-chart-3: var(--chart-3);
+    --color-chart-2: var(--chart-2);
+    --color-chart-1: var(--chart-1);
+    --color-ring: var(--ring);
+    --color-input: var(--input);
+    --color-border: var(--border);
+    --color-destructive: var(--destructive);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-accent: var(--accent);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-muted: var(--muted);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-secondary: var(--secondary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-primary: var(--primary);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-popover: var(--popover);
+    --color-card-foreground: var(--card-foreground);
+    --color-card: var(--card);
+    --color-foreground: var(--foreground);
+    --color-background: var(--background);
+
+    --color-brand-50: var(--brand-50);
+    --color-brand-100: var(--brand-100);
+    --color-brand-200: var(--brand-200);
+    --color-brand-300: var(--brand-300);
+    --color-brand-400: var(--brand-400);
+    --color-brand-500: var(--brand-500);
+    --color-brand-600: var(--brand-600);
+    --color-brand-700: var(--brand-700);
+    --color-brand-800: var(--brand-800);
+    --color-brand-900: var(--brand-900);
+    --color-brand-950: var(--brand-950);
+
+    --color-warm-50: var(--warm-50);
+    --color-warm-100: var(--warm-100);
+    --color-warm-200: var(--warm-200);
+    --color-warm-300: var(--warm-300);
+    --color-warm-400: var(--warm-400);
+    --color-warm-500: var(--warm-500);
+    --color-warm-600: var(--warm-600);
+    --color-warm-700: var(--warm-700);
+    --color-warm-800: var(--warm-800);
+    --color-warm-900: var(--warm-900);
+    --color-warm-950: var(--warm-950);
+
+    --color-cool-50: var(--cool-50);
+    --color-cool-100: var(--cool-100);
+    --color-cool-200: var(--cool-200);
+    --color-cool-300: var(--cool-300);
+    --color-cool-400: var(--cool-400);
+    --color-cool-500: var(--cool-500);
+    --color-cool-600: var(--cool-600);
+    --color-cool-700: var(--cool-700);
+    --color-cool-800: var(--cool-800);
+    --color-cool-900: var(--cool-900);
+    --color-cool-950: var(--cool-950);
+
+    --radius-sm: calc(var(--radius) * 0.6);
+    --radius-md: calc(var(--radius) * 0.8);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) * 1.4);
+    --radius-2xl: calc(var(--radius) * 1.8);
+    --radius-3xl: calc(var(--radius) * 2.2);
+    --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+    /* Layout — section container */
+    --container-px: 2rem;
+    --container-max-w: 96rem;
+
+    /* Brand — light blue accent. 400 = #adc6ff, 600 = #4d8eff, 900 = #002e6a */
+    --brand-50: oklch(0.975 0.013 268);
+    --brand-100: oklch(0.945 0.025 268);
+    --brand-200: oklch(0.905 0.04 268);
+    --brand-300: oklch(0.875 0.06 268);
+    --brand-400: oklch(0.836 0.082 268);
+    --brand-500: oklch(0.75 0.13 267);
+    --brand-600: oklch(0.667 0.183 265);
+    --brand-700: oklch(0.535 0.2 263);
+    --brand-800: oklch(0.4 0.165 262);
+    --brand-900: oklch(0.275 0.13 262);
+    --brand-950: oklch(0.18 0.09 262);
+
+    /* Warm neutrals — backgrounds, cards, surfaces. 200 = #e5e2e1, 700 = #353534, 900 = #1c1b1b, 950 = #131313 */
+    --warm-50: oklch(0.985 0.002 60);
+    --warm-100: oklch(0.96 0.003 60);
+    --warm-200: oklch(0.913 0.004 50);
+    --warm-300: oklch(0.82 0.005 50);
+    --warm-400: oklch(0.65 0.004 45);
+    --warm-500: oklch(0.5 0.003 40);
+    --warm-600: oklch(0.4 0.003 35);
+    --warm-700: oklch(0.345 0.003 30);
+    --warm-800: oklch(0.265 0.002 25);
+    --warm-900: oklch(0.215 0.002 30);
+    --warm-950: oklch(0.18 0.002 30);
+
+    /* Cool grays — secondary text, borders, dividers. 300 = #c2c6d6, 700 = #424754 */
+    --cool-50: oklch(0.98 0.005 265);
+    --cool-100: oklch(0.96 0.008 265);
+    --cool-200: oklch(0.91 0.013 265);
+    --cool-300: oklch(0.81 0.02 265);
+    --cool-400: oklch(0.68 0.022 265);
+    --cool-500: oklch(0.55 0.025 265);
+    --cool-600: oklch(0.46 0.025 265);
+    --cool-700: oklch(0.39 0.022 265);
+    --cool-800: oklch(0.3 0.018 265);
+    --cool-900: oklch(0.22 0.012 265);
+    --cool-950: oklch(0.15 0.008 265);
+
+    /* shadcn semantic tokens — light mode */
+    --background: var(--warm-50);
+    --foreground: var(--warm-950);
+    --card: var(--warm-100);
+    --card-foreground: var(--warm-950);
+    --popover: var(--warm-50);
+    --popover-foreground: var(--warm-950);
+    --primary: var(--brand-600);
+    --primary-foreground: var(--warm-50);
+    --secondary: var(--warm-100);
+    --secondary-foreground: var(--warm-900);
+    --muted: var(--warm-100);
+    --muted-foreground: var(--cool-600);
+    --accent: var(--warm-100);
+    --accent-foreground: var(--warm-900);
+    --destructive: oklch(0.577 0.245 27.325);
+    --border: var(--cool-200);
+    --input: var(--cool-200);
+    --ring: var(--brand-500);
+
+    --chart-1: var(--brand-400);
+    --chart-2: var(--brand-600);
+    --chart-3: var(--brand-800);
+    --chart-4: var(--cool-500);
+    --chart-5: var(--warm-500);
+
+    --radius: 0.625rem;
+
+    --sidebar: var(--warm-50);
+    --sidebar-foreground: var(--warm-950);
+    --sidebar-primary: var(--brand-600);
+    --sidebar-primary-foreground: var(--warm-50);
+    --sidebar-accent: var(--warm-100);
+    --sidebar-accent-foreground: var(--warm-900);
+    --sidebar-border: var(--cool-200);
+    --sidebar-ring: var(--brand-500);
+}
+
+.dark {
+    /* shadcn semantic tokens — dark mode (matches Figma design) */
+    --background: var(--warm-950);
+    --foreground: var(--warm-200);
+    --card: var(--warm-700);
+    --card-foreground: var(--warm-200);
+    --popover: var(--warm-900);
+    --popover-foreground: var(--warm-200);
+    --primary: var(--brand-400);
+    --primary-foreground: var(--brand-900);
+    --secondary: var(--warm-700);
+    --secondary-foreground: var(--warm-200);
+    --muted: var(--warm-900);
+    --muted-foreground: var(--cool-300);
+    --accent: var(--warm-700);
+    --accent-foreground: var(--warm-200);
+    --destructive: oklch(0.704 0.191 22.216);
+    --border: oklch(0.39 0.022 265 / 0.15);
+    --input: oklch(0.155 0 0);
+    --ring: var(--brand-400);
+
+    --chart-1: var(--brand-300);
+    --chart-2: var(--brand-500);
+    --chart-3: var(--brand-700);
+    --chart-4: var(--cool-400);
+    --chart-5: var(--warm-400);
+
+    --sidebar: var(--warm-900);
+    --sidebar-foreground: var(--warm-200);
+    --sidebar-primary: var(--brand-400);
+    --sidebar-primary-foreground: var(--brand-900);
+    --sidebar-accent: var(--warm-700);
+    --sidebar-accent-foreground: var(--warm-200);
+    --sidebar-border: oklch(0.39 0.022 265 / 0.15);
+    --sidebar-ring: var(--brand-400);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    }
+  body {
+    @apply bg-background text-foreground;
+    }
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.marquee-fast {
+  animation: scroll-left 35s linear infinite;
+}
+
+.marquee-medium {
+  animation: scroll-right 50s linear infinite;
+}
+
+.marquee-slow {
+  animation: scroll-left 60s linear infinite;
+}
+
+.marquee-fast:hover,
+.marquee-medium:hover,
+.marquee-slow:hover {
+  animation-play-state: paused;
+}
