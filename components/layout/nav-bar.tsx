@@ -92,7 +92,7 @@ function NavBar() {
             asChild
             className="mt-2 h-auto rounded-xl px-6 py-2 text-base"
           >
-            <Link href="#contact" onClick={close}>
+            <Link href="/contact" onClick={close}>
               Connect
             </Link>
           </Button>
