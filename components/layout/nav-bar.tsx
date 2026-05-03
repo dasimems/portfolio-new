@@ -10,7 +10,7 @@ import { aria } from "@/lib/aria"
 import { cn } from "@/lib/utils"
 
 const navLinks = [
-  { href: "#work", label: "Work" },
+  { href: "/projects", label: "Works" },
   { href: "#expertise", label: "Expertise" },
   { href: "#process", label: "Process" },
   { href: "#journal", label: "Journal" },
@@ -49,7 +49,7 @@ function NavBar() {
             asChild
             className="hidden h-auto rounded-xl px-6 py-2 text-base lg:inline-flex"
           >
-            <Link href="#contact">Connect</Link>
+            <Link href="/contact">Connect</Link>
           </Button>
 
           <Button
